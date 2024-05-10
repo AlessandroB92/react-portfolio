@@ -4,8 +4,8 @@ import MyNavbar from "./components/navbar/MyNavbar";
 function App() {
   return (
     <>
-    <section>
-      <MyNavbar />
+      <section>
+        <MyNavbar />
       </section>
       <section id="About">ABOUT ME</section>
       <section id="Projects">PROJECTS</section>
