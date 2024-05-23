@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/header/Navbar";
-import Hero from "./components/header/Hero"
+import Hero from "./components/header/Hero";
 
 function App() {
   return (
     <>
-        <Navbar />
+      <Navbar />
       <section>
         <Hero />
       </section>
