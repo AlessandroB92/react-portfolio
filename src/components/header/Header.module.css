@@ -33,7 +33,7 @@
   border-radius: 20px;
   overflow-y: auto;
   backdrop-filter: blur(10px);
-  animation: fadeIn 2.5s ease-out forwards;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .description::-webkit-scrollbar {
@@ -86,7 +86,7 @@
   height: 250px;
   width: 250px;
   transform: translateX(100rem);
-  animation: slideIn 2s forwards;
+  animation: slideIn 1.5s forwards;
 }
 
 .profilo {
@@ -100,7 +100,7 @@
 .loader {
   position: relative;
   top: -140%;
-  animation: rotation 2.5s infinite;
+  animation: rotation 1.5s linear infinite;
 }
 
 @keyframes rotation {
@@ -140,6 +140,7 @@ a {
 }
 
 .brand {
+  margin-left: 10px;
   font-size: 3.5rem;
   font-weight: 300;
   transform: translateX(-100rem);
