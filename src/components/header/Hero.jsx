@@ -9,9 +9,10 @@ function Hero() {
         <h1 className="m-3 fw-bold">
           <span className={styles.brandspan}>FULL-STACK WEB DEVELOPER</span>
         </h1>
+        <hr className="mx-3"/>
         <p className="mx-3 mb-4">
           Alla ricerca di opportunità che mi permettano di continuare a crescere
-          come <span className={styles.brandspan}>Sviluppatore Software</span> e
+          come <span className={styles.brandspan}>Web Developer</span> e
           contribuire al successo di un' azienda nel settore{" "}
           <span className={styles.brandspan}>Tech</span>! Dinamico, orientato ai
           risultati e appassionato di apprendimento continuo, sempre pronto ad
