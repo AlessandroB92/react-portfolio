@@ -1,0 +1,84 @@
+.hero {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    position: relative;
+    width: 90%;
+    top: 35%;
+    color: white;
+    animation: fadeOut linear forwards;
+    animation-timeline: view();
+    animation-range: exit -130px;
+  }
+  
+  .description {
+    line-height: 1.5;
+    width: 60%;
+    background: rgb(176, 176, 176);
+    background: -moz-radial-gradient(
+      circle,
+      #b0b0b01a 0%,
+      #b0b0b016 40%,
+      #b0b0b009 65%,
+      #b0b0b000 92%
+    );
+    background: -webkit-radial-gradient(
+      circle,
+      #b0b0b01a 0%,
+      #b0b0b016 40%,
+      #b0b0b009 65%,
+      #b0b0b000 92%
+    );
+    background: radial-gradient(
+      circle,
+      #b0b0b01a 0%,
+      #b0b0b016 40%,
+      #b0b0b009 65%,
+      #b0b0b000 92%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0",endColorstr="#b0b0b0",GradientType=1);
+    animation: fadeIn 2.5s ease-out forwards;
+  }
+  
+  .description::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 10px;
+  }
+  
+  .description::-webkit-scrollbar-track {
+    border-radius: 10px;
+    border: 1px solid #424242;
+    background-color: #000000;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .description::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.5, #2bff004b),
+      color-stop(1, #2bff00)
+    );
+    border-radius: 10px;
+  }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
