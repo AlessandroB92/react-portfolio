@@ -22,7 +22,7 @@
   justify-content: space-between;
   font-size: 2.5rem;
   position: relative;
-  height: 330px;
+  height: auto;
   width: 90%;
   top: 35%;
   color: white;
@@ -34,6 +34,7 @@
 .description {
   line-height: 1.5;
   width: 60%;
+  padding: 20px 0;
   background: rgb(176, 176, 176);
   background: -moz-radial-gradient(
     circle,

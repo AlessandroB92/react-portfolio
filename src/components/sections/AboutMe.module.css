@@ -13,7 +13,7 @@ h1 {
   color: white;
   animation: fadeOut linear forwards;
   animation-timeline: view();
-  animation-range: exit -130px;
+  animation-range: exit -100px;
 }
 
 .description {
