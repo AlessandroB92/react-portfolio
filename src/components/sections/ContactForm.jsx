@@ -26,15 +26,15 @@ function ContactForm() {
   };
 
   return (
-    <div className="container d-flex">
+    <div id="contactModule" className="container d-flex">
       <div className="container">
         <form className="contact-form" onSubmit={handleSubmit}>
-          <label className="text-white fs-3">Nome</label>
-          <input type="text" name="from_name" />
-          <label className="text-white fs-3">Email</label>
-          <input type="email" name="from_email" />
-          <label className="text-white fs-3">Messaggio</label>
-          <textarea name="message" />
+          <label className="text-white fs-3">Nome<input type="text" name="from_name" /></label>
+          
+          <label className="text-white fs-3">Email<input type="email" name="from_email" /></label>
+          
+          <label className="text-white fs-3">Messaggio<textarea name="message" /></label>
+          
           <input
             className={styles.Button}
             type="submit"
