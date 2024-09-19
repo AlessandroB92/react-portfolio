@@ -1,4 +1,3 @@
-import React from "react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
 import styles from "../header/Button.module.css";

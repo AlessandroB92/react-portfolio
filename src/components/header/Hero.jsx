@@ -11,12 +11,12 @@ function Hero() {
         </h1>
         <hr className="mx-3"/>
         <p className="mx-3 mb-4">
-          Alla ricerca di opportunità che mi permettano di continuare a crescere
+          {/* Alla ricerca di opportunità che mi permettano di continuare a crescere
           come <span className={styles.brandspan}>Web Developer</span> e
-          contribuire al successo di un' azienda nel settore{" "}
+          contribuire al successo di un`azienda nel settore{" "}
           <span className={styles.brandspan}>Tech</span>! Dinamico, orientato ai
           risultati e appassionato di apprendimento continuo, sempre pronto ad
-          affrontare nuove sfide e superare le aspettative!
+          affrontare nuove sfide e superare le aspettative! */}
         </p>
         <div className={styles.imgContainer}>
           <div>
