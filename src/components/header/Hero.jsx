@@ -50,7 +50,7 @@ function Hero() {
         </div>
       </div>
       <div className={styles.profiloContainer}>
-        <img className={styles.profilo} src={imageAle} alt="Profile" />
+        <img className={styles.profilo} src={imageAle} alt="Profile" loading="lazy" />
         <img className={styles.loader} src={Loader} alt="Loader" />
       </div>
     </div>
