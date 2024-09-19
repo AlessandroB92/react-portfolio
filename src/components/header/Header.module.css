@@ -5,13 +5,13 @@
   z-index: 1;
   width: 100%;
 }
-.up{
+.up {
   font-size: 24px;
-  margin:0 10px;
+  margin: 0 10px;
   color: #2bff00;
   margin-bottom: 4px;
 }
-.up:hover{
+.up:hover {
   transform: translateY(-5px) scale(1.3);
   transition: 0.3s ease;
 }
@@ -297,10 +297,21 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .profilo,
   .profiloContainer {
-    display: none;
-    font-size: 1rem;
+    position: absolute;
+    top: -40%;
+    left: -10%;
+  }
+  .profilo {
+    width: 130px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: 2;
+    top: 5px;
+  }
+  .loader {
+    width: 55%;
+    height: 55%;
   }
 
   .description {
