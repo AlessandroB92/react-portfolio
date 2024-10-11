@@ -1,0 +1,79 @@
+.hero {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  position: relative;
+  width: 90%;
+  top: 10%;
+  color: white;
+  animation: fadeOut linear forwards;
+  animation-timeline: view();
+  animation-range: exit -100px;
+}
+
+.description {
+  line-height: 1.5;
+  width: 60%;
+  background: rgb(176, 176, 176);
+  background: -moz-radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
+  background: radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0", endColorstr="#b0b0b0", GradientType=1);
+  animation: fadeIn 2.5s ease-out forwards;
+}
+
+.project {
+  color: #2bff00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .description {
+    width: 100%;
+  }
+}

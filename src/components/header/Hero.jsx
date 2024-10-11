@@ -14,6 +14,7 @@ import imageCSharp from '../../assets/images/imageCSharp.png';
 import imageSQL from '../../assets/images/imageSQL.png';
 import imageGitHub from '../../assets/images/imageGitHub.png';
 import imageAle from '../../assets/images/imageAle.png';
+import imageWP from '../../assets/images/imageWP.webp';
 import Loader from '../../assets/images/Loader.png';
 
 function Hero() {
@@ -45,6 +46,7 @@ function Hero() {
             <img className={styles.badge} src={imageCSharp} alt="C#" />
             <img className={styles.badge} src={imageSQL} alt="SQL" />
             <img className={styles.badge} src={imageGitHub} alt="GitHub" />
+            <img className={styles.badge} src={imageWP} alt="WP" />
           </div>
           <CvButton />
         </div>
