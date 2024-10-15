@@ -24,7 +24,7 @@ h2 {
   text-align: center;
 }
 
-li{
+li {
   transform: translateY(100rem);
   animation: slideUp 1s forwards;
 }
@@ -34,7 +34,7 @@ li:nth-child(1) {
 }
 
 li:nth-child(2) {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 li:nth-child(3) {
@@ -72,6 +72,7 @@ li:nth-child(4) {
 .contact-form textarea {
   height: 150px;
 }
+
 
 @keyframes fadeIn {
   0% {

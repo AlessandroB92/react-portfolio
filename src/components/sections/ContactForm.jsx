@@ -1,3 +1,4 @@
+import { useState } from "react"; // Importa useState
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
 import styles from "../header/Button.module.css";
@@ -9,10 +10,21 @@ import {
 } from "react-icons/fa";
 
 function ContactForm() {
+  const [error, setError] = useState(""); // Stato per gestire l'errore
   emailjs.init("D6tmn39cooV8v3wql");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm("portfolio_contact", "portfolio_template", e.target).then(
+    const form = e.target;
+
+    // Verifica se i campi sono vuoti
+    if (!form.from_name.value || !form.from_email.value || !form.message.value) {
+      setError("Compila tutti i campi"); // Imposta il messaggio di errore
+      return; // Interrompe l'invio del modulo
+    }
+
+    setError(""); // Reset dell'errore
+    emailjs.sendForm("portfolio_contact", "portfolio_template", form).then(
       (result) => {
         console.log("Email inviata con successo:", result.text);
       },
@@ -21,18 +33,26 @@ function ContactForm() {
         alert("Errore durante l'invio dell'email.");
       }
     );
-    e.target.reset();
+    form.reset();
   };
 
   return (
     <div id="contactModule" className="container d-flex">
       <div className="container">
         <form className="contact-form" onSubmit={handleSubmit}>
-          <label className="text-white fs-3">Nome<input type="text" name="from_name" /></label>
+        {error && <div className="alert alert-danger text-center fs-2" role="alert">{error}</div>}
+
+          <label className="text-white fs-3">Nome
+            <input type="text" name="from_name" />
+          </label>
           
-          <label className="text-white fs-3">Email<input type="email" name="from_email" /></label>
+          <label className="text-white fs-3">Email
+            <input type="email" name="from_email" />
+          </label>
           
-          <label className="text-white fs-3">Messaggio<textarea name="message" /></label>
+          <label className="text-white fs-3">Messaggio
+            <textarea name="message" />
+          </label>
           
           <input
             className={styles.Button}
@@ -69,7 +89,7 @@ function ContactForm() {
             </a>
           </li>
           <li className="my-3 text-center">
-          <a
+            <a
               href="https://www.instagram.com/alessandro_b92/"
               target="_blank"
               rel="noopener noreferrer"
@@ -81,7 +101,7 @@ function ContactForm() {
             </a>
           </li>
           <li className="my-3 text-center">
-          <a
+            <a
               href="https://www.facebook.com/Alessandrobasilebasile/?locale=it_IT"
               target="_blank"
               rel="noopener noreferrer"
