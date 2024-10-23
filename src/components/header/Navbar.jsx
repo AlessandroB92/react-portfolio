@@ -53,14 +53,14 @@ function Navbar() {
         <div className={`${styles.container} ${isOpen && styles.menuopen}`}>
           <nav className={`${styles.nav} ${isOpen && styles.menuopen}`}>
             <h1 className={styles.brand}>
-              <a href="#" onClick={closeMenu}>
+              <a href="/" onClick={closeMenu}>
                 <span className={styles.brandspan}>A</span>less
                 <span className={styles.brandspan}>A</span>ndro
               </a>
             </h1>
             <ul className={styles.navul}>
               <li className={styles.navli}>
-                <a href="#" onClick={closeMenu}>
+                <a href="/" onClick={closeMenu}>
                   <FaArrowCircleUp className={styles.up} />
                 </a>
               </li>

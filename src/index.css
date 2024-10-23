@@ -5,20 +5,68 @@
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2bff00;
+  border-radius: 10px;
+  border: 3px solid #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2bff00;
+}
+
+
 html {
   font-size: 9px;
   font-family: "Roboto", sans-serif;
   background-color: black;
 }
 
-section {
+#Home {
   width: 100%;
   height: 100vh;
   background-color: rgb(14, 14, 14);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-  url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg") center no-repeat;
+  url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg") center; 
   background-size: cover;
 }
+
+#About {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(14, 14, 14);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  url("https://www.noidellascuola.it/wp-content/uploads/2022/12/shutterstock_1714491562.jpg") center;
+  background-size: cover;
+}
+
+#Projects {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(14, 14, 14);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  url("https://education.mrdigital.it/wp-content/uploads/2021/07/codin1.jpg") center;
+  background-size: cover;
+}
+
+#Contacts {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(14, 14, 14);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  url("https://www.noidellascuola.it/wp-content/uploads/2022/12/shutterstock_1714491562.jpg") center;
+  background-size: cover;
+}
+
 
 
 /* url("https://images.unsplash.com/photo-1523374228107-6e44bd2b524e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") 
@@ -28,4 +76,8 @@ url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg")
 url("https://i.pinimg.com/originals/c5/9a/d2/c59ad2bd4ad2fbacd04017debc679ddb.gif")
 
 url("https://img.freepik.com/free-vector/green-digital-binary-numbers-glowing-background_1017-37271.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1715731200&semt=ais_user")
+
+url("https://education.mrdigital.it/wp-content/uploads/2021/07/codin1.jpg")
+
+url("https://www.noidellascuola.it/wp-content/uploads/2022/12/shutterstock_1714491562.jpg")
 */

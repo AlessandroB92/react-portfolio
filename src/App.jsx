@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <section>
+      <section id="Home">
         <Hero />
       </section>
       <section id="About">
