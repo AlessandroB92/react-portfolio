@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
 import styles from "./Header.module.css";
 import CvButton from "./CvButton";
 
-// Importa le immagini
 import imageHTML from '../../assets/images/imageHTML.png';
 import imageCSS from '../../assets/images/imageCSS.png';
 import imageJs from '../../assets/images/imageJs.png';
@@ -19,12 +19,18 @@ import Loader from '../../assets/images/Loader.png';
 
 function Hero() {
   return (
-    <div className={styles.hero}>
+    <motion.div
+      className={styles.hero}
+      initial={{ opacity: 0, x: -200 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+    >
       <div className={styles.description}>
         <h1 className="m-3 fw-bold">
           <span className={styles.brandspan}>FULL-STACK WEB DEVELOPER</span>
         </h1>
-        <hr className="mx-3"/>
+        <hr className="mx-3" />
         <p className="mx-3 mb-4">
           Alla ricerca di opportunità che mi permettano di continuare a crescere
           come <span className={styles.brandspan}>Web Developer</span> e
@@ -51,11 +57,17 @@ function Hero() {
           <CvButton />
         </div>
       </div>
-      <div className={styles.profiloContainer}>
+      <motion.div
+        className={styles.profiloContainer}
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+        viewport={{ once: false }}
+      >
         <img className={styles.profilo} src={imageAle} alt="Profile" loading="lazy" />
         <img className={styles.loader} src={Loader} alt="Loader" />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

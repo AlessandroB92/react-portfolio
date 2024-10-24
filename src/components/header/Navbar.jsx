@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import styles from "./Header.module.css";
 import { FaBars, FaTimes, FaArrowCircleUp } from "react-icons/fa";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true); // Stato per la visibilità della navbar
-  const [lastScrollY, setLastScrollY] = useState(0); // Ultima posizione di scroll
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,30 +16,31 @@ function Navbar() {
     setIsOpen(false);
   };
 
-  // Aggiungi un listener per lo scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY) {
-        // Scorrendo verso il basso
-        setIsVisible(false);
+        setIsVisible(false); // Nascondi navbar
       } else {
-        // Scorrendo verso l'alto
-        setIsVisible(true);
+        setIsVisible(true); // Mostra navbar
       }
       setLastScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Rimuovi il listener alla pulizia del componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY, isVisible]); // Includi lastScrollY e isVisible nelle dipendenze
+  }, [lastScrollY]);
 
   return (
     <>
-      <header className={`${styles.header} ${!isVisible ? styles.hidden : styles.visible}`}>
+      <motion.header
+        className={`${styles.header}`}
+        initial={{ y: -100 }}
+        animate={{ y: isVisible ? 0 : -100 }} // Anima la navbar
+        transition={{ duration: 0.3 }}
+      >
         <div
           className={`${styles.menutoggle} ${isOpen && styles.menuopen}`}
           id="hamburger"
@@ -82,7 +84,7 @@ function Navbar() {
             </ul>
           </nav>
         </div>
-      </header>
+      </motion.header>
     </>
   );
 }

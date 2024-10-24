@@ -1,5 +1,4 @@
 import styles from "./Button.module.css";
-import React from "react";
 import CV from "../../assets/images/Alessandro-Basile-CV.pdf";
 import { motion } from "framer-motion";
 
@@ -11,6 +10,6 @@ function CvButton () {
       </a>
     </motion.div>
   );
-};
+}
 
 export default CvButton;
