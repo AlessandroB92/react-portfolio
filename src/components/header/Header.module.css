@@ -118,12 +118,10 @@
   position: relative;
   width: 250px;
   height: 250px;
+  right: 115px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  /* animation: zoomIn 1s ease-out forwards;
-  animation-delay: 0.5s; */
 }
 
 .profilo {
@@ -282,17 +280,6 @@ a {
   }
   to {
     transform: translateX(0);
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 

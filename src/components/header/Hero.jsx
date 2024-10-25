@@ -19,8 +19,8 @@ import Loader from '../../assets/images/Loader.png';
 
 function Hero() {
   return (
+    <div className={styles.hero}>
     <motion.div
-      className={styles.hero}
       initial={{ opacity: 0, x: -200 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeInOut" }}
@@ -57,17 +57,18 @@ function Hero() {
           <CvButton />
         </div>
       </div>
+    </motion.div>
       <motion.div
         className={styles.profiloContainer}
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
         viewport={{ once: false }}
       >
         <img className={styles.profilo} src={imageAle} alt="Profile" loading="lazy" />
         <img className={styles.loader} src={Loader} alt="Loader" />
       </motion.div>
-    </motion.div>
+    </div>
   );
 }
 
