@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./MyProjects.module.css";
 import TravelNestVideo from "../../assets/images/TravelNest_Presentazione.mp4";
 import Netflixclone from "../../assets/images/Netflix_clone.mp4";
+import InForno from "../../assets/images/InForno_Pizzeria.mp4";
 
 const MyProjects = () => {
   return (
@@ -61,6 +62,30 @@ const MyProjects = () => {
               </h4>
               <video width="400" controls>
                 <source src={Netflixclone} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, delay: 0.4 }}
+          viewport={{ once: false }}
+        >
+          <div>
+            <hr className="mx-3" />
+            <div className="m-3">
+              <h4 className="text-center m-5 fs-2 fw-bold">
+                <a
+                  href="https://github.com/AlessandroB92/react-portfolio"
+                  target="blank"
+                >
+                  Netflix Clone
+                </a>
+              </h4>
+              <video width="400" controls>
+                <source src={InForno} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
