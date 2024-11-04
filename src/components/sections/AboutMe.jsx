@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <motion.div
       className={styles.hero}
-      initial={{ opacity: 0, x: -200 }}  // Inizialmente nascosto e spostato verso il basso
+      initial={{ opacity: 0, x: -100 }}  // Inizialmente nascosto e spostato verso il basso
       whileInView={{ opacity: 1, x: 0 }}  // Quando visibile, torna in posizione e appare
       transition={{ duration: 1.5 }}  // Durata della transizione
       viewport={{ once: false }}  // Animazione ripetuta ogni volta che l'elemento è visibile
