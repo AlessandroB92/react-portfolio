@@ -6,43 +6,12 @@
   top: 35%;
   color: white;
 }
+.description{
+  width: 90%;
+  margin: auto;
+}
 
 video {
   width: 100%;
-  margin: 5% 0;
-}
-
-.description {
-  line-height: 1.5;
-  width: 60%;
-  background: rgb(176, 176, 176);
-  background: -moz-radial-gradient(
-    circle,
-    #b0b0b01a 0%,
-    #b0b0b016 40%,
-    #b0b0b009 65%,
-    #b0b0b000 92%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    #b0b0b01a 0%,
-    #b0b0b016 40%,
-    #b0b0b009 65%,
-    #b0b0b000 92%
-  );
-  background: radial-gradient(
-    circle,
-    #b0b0b01a 0%,
-    #b0b0b016 40%,
-    #b0b0b009 65%,
-    #b0b0b000 92%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b0b0b0", endColorstr="#b0b0b0", GradientType=1);
-  animation: fadeIn 2.5s ease-out forwards;
-}
-
-@media screen and (max-width: 700px) {
-  .description {
-    width: 100%;
-  }
+  margin: 2.5% auto;
 }

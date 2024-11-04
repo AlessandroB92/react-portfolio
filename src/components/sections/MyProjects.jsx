@@ -9,13 +9,13 @@ const MyProjects = () => {
     <div className={styles.hero}>
         <motion.div
         className={styles.hero}
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.5 }}
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
           viewport={{ once: false }}
-        >
-          <div>
-            <h1 className="mx-3 mb-3 fw-bold">MY PROJECTS</h1>
+        ><div className={styles.description}>
+            <h1 className="p-3 text-center fw-bold">MY PROJECTS</h1>
+            <hr className="mx-3" />
           </div>
         </motion.div>
       <div className={styles.hero}>
@@ -26,16 +26,15 @@ const MyProjects = () => {
           viewport={{ once: false}}
         >
           <div className={styles.description}>
-            <hr className="mx-3" />
             <div>
-              <h4 className="text-center m-5 fs-2 fw-bold">
+              <h2 className="text-center fs-1 m-3 fw-bold">
                 <a
                   href="https://github.com/AlessandroB92/Travel_Nest"
                   target="blank"
                 >
                   Travel Nest
                 </a>
-              </h4>
+              </h2>
               <video controls>
                 <source src={TravelNestVideo} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -50,16 +49,15 @@ const MyProjects = () => {
           viewport={{ once: false }}
         >
           <div className={styles.description}>
-          <hr className="mx-3" />
             <div>
-              <h4 className="text-center m-5 fs-2 fw-bold">
+              <h2 className="text-center fs-1 m-3 fw-bold">
                 <a
                   href="https://github.com/AlessandroB92/react-portfolio"
                   target="blank"
                 >
                   Netflix Clone
                 </a>
-              </h4>
+              </h2>
               <video controls>
                 <source src={Netflixclone} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -74,16 +72,15 @@ const MyProjects = () => {
           viewport={{ once: false }}
         >
           <div className={styles.description}>
-          <hr className="mx-3" />
             <div>
-              <h4 className="text-center m-5 fs-2 fw-bold">
+              <h2 className="text-center fs-1 m-3  fw-bold">
                 <a
                   href="https://github.com/AlessandroB92/react-portfolio"
                   target="blank"
                 >
-                  Netflix Clone
+                  In Forno Pizzeria
                 </a>
-              </h4>
+              </h2>
               <video controls>
                 <source src={InForno} type="video/mp4" />
                 Your browser does not support the video tag.
