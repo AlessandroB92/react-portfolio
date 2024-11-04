@@ -49,7 +49,7 @@ function ContactForm() {
           className="container"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.5 }}
           viewport={{ once: false }}
         >
           <form className="contact-form" onSubmit={handleSubmit}>
@@ -85,7 +85,7 @@ function ContactForm() {
         className="container"
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         viewport={{ once: false }}
       >
         <h2 className="text-center fs-1">GET IN TOUCH!</h2>
