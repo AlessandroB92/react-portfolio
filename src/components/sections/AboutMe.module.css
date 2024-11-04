@@ -9,7 +9,7 @@ h1 {
   font-size: 2.5rem;
   position: relative;
   width: 90%;
-  top: 35%;
+  top: 30%;
   color: white;
   animation: fadeOut linear forwards;
   animation-timeline: view();

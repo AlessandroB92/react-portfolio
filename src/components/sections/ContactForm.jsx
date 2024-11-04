@@ -89,8 +89,8 @@ function ContactForm() {
         viewport={{ once: false }}
       >
         <h2 className="text-center fs-1">GET IN TOUCH!</h2>
-        <ul className="social-list">
-          <li className="my-3 text-center">
+        <ul className="social-ul">
+          <li className="social-list">
             <a
               href="https://github.com/AlessandroB92"
               target="_blank"
@@ -102,7 +102,7 @@ function ContactForm() {
               GitHub
             </a>
           </li>
-          <li className="my-3 text-center">
+          <li className="social-list">
             <a
               href="https://www.linkedin.com/in/alessandro-basile-4a65bb192/"
               target="_blank"
@@ -114,7 +114,7 @@ function ContactForm() {
               LinkedIn
             </a>
           </li>
-          <li className="my-3 text-center">
+          <li className="social-list">
             <a
               href="https://www.instagram.com/alessandro_b92/"
               target="_blank"
@@ -126,7 +126,7 @@ function ContactForm() {
               Instagram
             </a>
           </li>
-          <li className="my-3 text-center">
+          <li className="social-list">
             <a
               href="https://www.facebook.com/Alessandrobasilebasile/?locale=it_IT"
               target="_blank"
