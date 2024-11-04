@@ -43,7 +43,7 @@ function ContactForm() {
   return (
     <div
       id="contactModule"
-      className="container h-100 d-flex justify-content-center align-items-center"
+      className="container d-flex"
     >
         <motion.div
           className="container"
