@@ -5,16 +5,16 @@ function AboutMe() {
   return (
     <motion.div
       className={styles.hero}
-      initial={{ opacity: 0, x: -100 }}  // Inizialmente nascosto e spostato verso il basso
-      whileInView={{ opacity: 1, x: 0 }}  // Quando visibile, torna in posizione e appare
-      transition={{ duration: 1.5 }}  // Durata della transizione
-      viewport={{ once: false }}  // Animazione ripetuta ogni volta che l'elemento è visibile
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: false }}
     >
       <div className={styles.description}>
         <h1 className="m-3 fw-bold">CHI SONO</h1>
         <hr className="mx-3" />
         <p className="mx-3 my-4 py-5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, enim mollitia eveniet debitis eius possimus, nemo, ipsa quod beatae cum dolores cumque maxime laudantium necessitatibus. Corrupti, iure? Quibusdam veritatis harum cumque ratione aliquid exercitationem quae adipisci odit autem rem, cupiditate deserunt accusamus, perferendis earum nobis quas sed possimus tempore magnam.
+        Ciao! Sono Alessandro Basile, uno <span>sviluppatore</span> full stack con una profonda passione per la tecnologia e un forte desiderio di migliorare continuamente il modo in cui le persone interagiscono con il digitale. Quando non sono impegnato a scrivere codice o a creare nuove soluzioni, mi trovi probabilmente in sella alla mia moto, in palestra a superare i miei limiti, o a esplorare le ultime tendenze tech. La mia missione è combinare il mio entusiasmo per l`innovazione con competenze tecniche solide per creare esperienze digitali che facciano davvero la differenza.
         </p>
       </div>
     </motion.div>

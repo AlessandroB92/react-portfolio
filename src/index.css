@@ -63,12 +63,12 @@ html {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
 }
 @media screen and (max-width: 700px) {
-  #Home, #About, #Contacts{
+  #Home{
     height: 125vh;
   }
-  #Projects {
+  #Projects, #Contacts, #About {
     height: 100%;
-    padding: 35% 0%;
+    padding: 25% 0;
   }
 }
 

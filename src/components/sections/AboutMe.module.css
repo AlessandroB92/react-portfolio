@@ -1,4 +1,4 @@
-h1 {
+h1, span {
   color: #2bff00;
 }
 
@@ -18,7 +18,7 @@ h1 {
 
 .description {
   line-height: 1.5;
-  width: 60%;
+  width: 80%;
   background: rgb(176, 176, 176);
   background: -moz-radial-gradient(
     circle,
