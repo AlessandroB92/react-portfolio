@@ -1,13 +1,12 @@
-import styles from "./Button.module.css";
 import CV from "../../assets/images/Alessandro-Basile-CV.pdf";
 import { motion } from "framer-motion";
 
 function CvButton () {
   return (
-    <motion.div className={styles.cvContainer} whileTap={{ scale: 0.85 }}>
-      <a className={styles.Button} href={CV} download>
+    <motion.div whileTap={{ scale: 0.85 }}>
+      <button><a href={CV} download>
         DOWNLOAD CV
-      </a>
+      </a></button>
     </motion.div>
   );
 }

@@ -5,6 +5,39 @@
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
+button, .invioMail {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 10px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border:2px solid #2bff00;
+  border-radius: 5px;
+  margin: 15px 5px;
+}
+.invioMail:hover{
+  transition: 0.3s ease;
+  -webkit-box-shadow: 0px 0px 8px 5px #2bff00;
+  box-shadow: 0px 0px 8px 5px #2bff00;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(20, 116, 0, 1) 75%,
+    rgba(43, 255, 0, 1) 100%
+  );
+}
+button:hover {
+  transition: 0.3s ease;
+  -webkit-box-shadow: 0px 0px 8px 5px #2bff00;
+  box-shadow: 0px 0px 8px 5px #2bff00;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(20, 116, 0, 1) 75%,
+    rgba(43, 255, 0, 1) 100%
+  );
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -53,7 +86,7 @@ html {
   height: 100%;
   padding: 10% 0;
   background-color: rgb(0, 0, 0);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
 }
 
 #Contacts {
@@ -61,6 +94,8 @@ html {
   height: 100vh;
   background-color: rgb(0, 0, 0);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+  url("https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg") center; 
+  background-size: cover;
 }
 @media screen and (max-width: 700px) {
   #Home{

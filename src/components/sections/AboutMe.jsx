@@ -14,7 +14,7 @@ function AboutMe() {
         <h1 className="m-3 fw-bold">CHI SONO</h1>
         <hr className="mx-3" />
         <p className="mx-3 my-4 py-5">
-        Ciao! Sono Alessandro Basile, uno <span>sviluppatore</span> full stack con una profonda passione per la tecnologia e un forte desiderio di migliorare continuamente il modo in cui le persone interagiscono con il digitale. Quando non sono impegnato a scrivere codice o a creare nuove soluzioni, mi trovi probabilmente in sella alla mia moto, in palestra a superare i miei limiti, o a esplorare le ultime tendenze tech. La mia missione è combinare il mio entusiasmo per l`innovazione con competenze tecniche solide per creare esperienze digitali che facciano davvero la differenza.
+        Ciao! Sono Alessandro Basile, uno <span>SVILUPPATORE FULL STACK</span> con una profonda passione per la tecnologia e un forte desiderio di migliorare continuamente il modo in cui le persone interagiscono con il digitale. Quando non sono impegnato a scrivere codice o a creare nuove soluzioni, mi trovi probabilmente in sella alla mia moto, in palestra a superare i miei limiti, o a esplorare le ultime tendenze tech. La mia missione è combinare il mio entusiasmo per l`innovazione con competenze tecniche solide per creare esperienze digitali che facciano davvero la differenza.
         </p>
       </div>
     </motion.div>

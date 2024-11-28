@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from "./Header.module.css";
 import CvButton from "./CvButton";
-
 import imageHTML from '../../assets/images/imageHTML.png';
 import imageCSS from '../../assets/images/imageCSS.png';
 import imageJs from '../../assets/images/imageJs.png';

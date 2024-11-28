@@ -8,10 +8,34 @@
 }
 .description{
   width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+  background: rgb(176, 176, 176);
+  background: -moz-radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
+  background: radial-gradient(
+    circle,
+    #b0b0b01a 0%,
+    #b0b0b016 40%,
+    #b0b0b009 65%,
+    #b0b0b000 92%
+  );
 }
 
 video {
-  width: 100%;
+  width: 70%;
   margin: 2.5% auto;
 }
 

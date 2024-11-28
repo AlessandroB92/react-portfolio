@@ -2,7 +2,6 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import "./ContactForm.css";
-import styles from "../header/Button.module.css";
 import {
   FaGithub,
   FaLinkedin,
@@ -17,7 +16,7 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-
+  
     if (
       !form.from_name.value ||
       !form.from_email.value ||
@@ -26,11 +25,12 @@ function ContactForm() {
       setError("Compila tutti i campi");
       return;
     }
-
+  
     setError("");
     emailjs.sendForm("portfolio_contact", "portfolio_template", form).then(
       (result) => {
         console.log("Email inviata con successo:", result.text);
+        alert("Messaggio inviato con successo! Ti risponderemo al più presto.");
       },
       (error) => {
         console.error("Errore durante l'invio dell'email:", error);
@@ -75,7 +75,7 @@ function ContactForm() {
             </label>
 
             <input
-              className={styles.Button}
+            className="invioMail"
               type="submit"
               value="INVIA MESSAGGIO"
             />
